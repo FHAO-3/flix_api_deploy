@@ -1,0 +1,850 @@
+{
+	"info": {
+		"_postman_id": "6c69ec05-adf5-4339-a617-4f61cb7ce7f5",
+		"name": "filx-api in production",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37556115"
+	},
+	"item": [
+		{
+			"name": "actors",
+			"item": [
+				{
+					"name": "actors get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyNTE5NzI0LCJpYXQiOjE3NTI0MzMzMjQsImp0aSI6Ijg0OWVmNWYxNjYyYzRlNzk4MTFjNzAwYTQwNTQwZjEyIiwidXNlcl9pZCI6Mn0.VWKh_XlN_bJYBvd73gwvQ3rIsiCsDVOKhGlSDYqPmAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/actors",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actors datail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/actors/1",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actors put",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/actors",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actors post",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/actors/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actors delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/actors/5",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actors post",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/actors",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"actors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "authentication",
+			"item": [
+				{
+					"name": "authentication get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODU0NjE0LCJpYXQiOjE3NTE4NTEwMTQsImp0aSI6IjFiNjk4ZWUyZDVmZTQ4NTFiMmNlY2UyZDVkOGI0YThjIiwidXNlcl9pZCI6M30.IYo_W5g6DfcI4wK80NJbc4ks7iiUmV7Q-sZ5-jg85ig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"cinemark\",\r\n    \"password\": \"djangomaster\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/authentication/token/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"authentication",
+								"token",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authentication refresh",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0ODMyODU2NSwiaWF0IjoxNzQ4MjQyMTY1LCJqdGkiOiI3MjM0ODJmYjM1MTE0YWJjOTEyMWQ4MjQwN2E3YzAwNyIsInVzZXJfaWQiOjN9.JPYzoW7Es7_BC_DIyNzmcGjcJpVstbp2YWLAQ4b0h9w\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/authentication/token/refresh/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"authentication",
+								"token",
+								"refresh",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authentication verify",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4MjQxOTUzLCJpYXQiOjE3NDgyNDE2NTMsImp0aSI6ImNiNjkwMDcyMGEzMTRkODhiZGY3YTY2OGUzYmMxNWFlIiwidXNlcl9pZCI6M30.CRHIvYGT1WunN0oJTBgZyxojdTvD_tw4NnaJ-_tSa3U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/authentication/token/verify/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"authentication",
+								"token",
+								"verify",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "genres",
+			"item": [
+				{
+					"name": "genre get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4NzAyOTM0LCJpYXQiOjE3NDg3MDI2MzQsImp0aSI6ImMzYjU3NDVjZTBiZDQ2ZmRhZTI0MmVmMWY0YjM5NGI0IiwidXNlcl9pZCI6NH0.0NnWjE6fOV5SBAoRRrSaGkAAIIaFhEDPORuEvgpCTyA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/genres",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "genre get detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/genres/1",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genres",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "genre put",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4MzcxNjY1LCJpYXQiOjE3NDgzNzEzNjUsImp0aSI6IjA5NWViYmRkYzczNzQ5OGZiNGVmMWNkYTQ0OGNmYTBiIiwidXNlcl9pZCI6M30.mb-cSFqRAvHKhJbjnZUmmvLlbMxx1dpDWcxExxhNMus",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"12\",\r\n    \"name\": \"Ficção cientifica\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/genres/12/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genres",
+								"12",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "genre post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4MzcxMDg1LCJpYXQiOjE3NDgzNzA3ODUsImp0aSI6IjYyNGU0Nzg1YzgyYzRlNWNiMjNkODRhYTY1OGZiNGVkIiwidXNlcl9pZCI6M30.uJAWIsZe2bxsRX-5QH02tnGasLoTvkhkxdIg03Px9go",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Documentario\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/genres/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genres",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "genre delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4MzcxOTI1LCJpYXQiOjE3NDgzNzE2MjUsImp0aSI6IjRlMDViZDMyNmI3YzQ3ZDI4NzVjYmViOTMxZWM1ZDBiIiwidXNlcl9pZCI6NH0.hJgJj2T7zQeN52oYelETHzutkorFVgH4crlX0slzgJI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/genres/13/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genres",
+								"13",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "genre options",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/genres",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "movies",
+			"item": [
+				{
+					"name": "movies get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/movies/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get movie stats",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/movies/stats/",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movies detail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/movies/3",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movies put",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/movies/1",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movies post",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/movies",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movies delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/movies",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movies options ",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/movies",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reviews",
+			"item": [
+				{
+					"name": "reviews get",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/reviews",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviews detail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/reviews/1",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviews put",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/reviews/1",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviews post",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/reviews",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviews delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/reviews",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviews options",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "https://fhao.pythonanywhere.com/api/v1/reviews",
+							"protocol": "https",
+							"host": [
+								"fhao",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
